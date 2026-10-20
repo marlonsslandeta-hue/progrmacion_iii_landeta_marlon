@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Registro de capacitaciones</title>
+</head>
+<body>
+
+    <header>
+        <h1>Centro de Capacitación</h1>
+        <p>Registro de capacitaciones online</p>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <form action="#"
+              method="get"
+              id="registro-capacitaciones">
+
+            <fieldset>
+                <legend>Información de la capacitación</legend>
+
+                <label for="codigo">
+                    Código del curso:
+                </label>
+
+                <input type="text"
+                       id="codigo"
+                       name="codigo"
+                       placeholder="CUR-001"
+                       maxlength="10"
+                       required>
+
+                <br><br>
+
+                <label for="responsable">
+                    Instructor responsable:
+                </label>
+
+                <select id="responsable"
+                        name="responsable"
+                        required>
+
+                    <option value="">
+                        Selecciona un instructor
+                    </option>
+
+                    <option value="juan">
+                        Juan Pérez
+                    </option>
+
+                    <option value="maria">
+                        María González
+                    </option>
+
+                    <option value="carlos">
+                        Carlos Rodríguez
+                    </option>
+
+                </select>
+
+                <br><br>
+
+                <label for="curso">
+                    Nombre del curso:
+                </label>
+
+                <input type="text"
+                       id="curso"
+                       name="curso"
+                       placeholder="Ej. Marketing Digital"
+                       required>
+
+                <br><br>
+
+                <label for="fecha">
+                    Fecha de inicio:
+                </label>
+
+                <input type="date"
+                       id="fecha"
+                       name="fecha"
+                       required>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Características de la capacitación</legend>
+
+                <p>Prioridad de la capacitación:</p>
+
+                <input type="radio"
+                       id="alta"
+                       name="prioridad"
+                       value="alta"
+                       required>
+
+                <label for="alta">Alta</label>
+
+                <input type="radio"
+                       id="media"
+                       name="prioridad"
+                       value="media">
+
+                <label for="media">Media</label>
+
+                <input type="radio"
+                       id="baja"
+                       name="prioridad"
+                       value="baja">
+
+                <label for="baja">Baja</label>
+
+                <br><br>
+
+                <label for="horas">
+                    Duración del curso en horas:
+                </label>
+
+                <input type="number"
+                       id="horas"
+                       name="horas"
+                       min="1"
+                       max="500"
+                       value="30">
+
+                <p>Recursos necesarios:</p>
+
+                <input type="checkbox"
+                       id="videos"
+                       name="recursos"
+                       value="videos">
+
+                <label for="videos">
+                    Videos educativos
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="documentos"
+                       name="recursos"
+                       value="documentos">
+
+                <label for="documentos">
+                    Documentos y materiales digitales
+                </label>
+
+                <br>
+
+                <input type="checkbox"
+                       id="videoconferencia"
+                       name="recursos"
+                       value="videoconferencia">
+
+                <label for="videoconferencia">
+                    Plataforma de videoconferencia
+                </label>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Descripción de la capacitación</legend>
+
+                <label for="descripcion">
+                    Objetivo principal del curso:
+                </label>
+
+                <br>
+
+                <textarea id="descripcion"
+                          name="descripcion"
+                          rows="5"
+                          cols="45"
+                          maxlength="500"
+                          placeholder="Describe los objetivos y contenidos de la capacitación..."
+                          required></textarea>
+
+            </fieldset>
+
+            <br>
+
+            <button type="submit">
+                Registrar capacitación
+            </button>
+
+            <button type="reset">
+                Limpiar datos
+            </button>
+
+        </form>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <small>
+                Centro de Capacitación - 2026
+            </small>
+        </p>
+
+        <p>
+            Aprende hoy, transforma tu futuro.
+        </p>
+    </footer>
+
+</body>
+</html>

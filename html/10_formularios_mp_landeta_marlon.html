@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - centro de capacitaciones</title>
+</head>
+
+<body>
+
+    <h1>Registro de Estudiantes - Centro de capacitaciones</h1>
+
+    <form action="/registro" method="post">
+
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre</label>
+                    <br>
+                    <input type="text" id="nombre" name="nombre"
+                        placeholder="Ej. Daniel">
+                    <br>
+
+                    <label for="password">Contraseña</label>
+                    <br>
+                    <input type="password" id="password" name="password">
+                    <br>
+
+                    <label for="edad">Edad</label>
+                    <br>
+                    <input type="number" id="edad" name="edad" min="1">
+                </td>
+
+                <td>
+                    <label for="apellido">Apellido</label>
+                    <br>
+                    <input type="text" id="apellido" name="apellido"
+                        placeholder="Ej. Marlon">
+                    <br>
+
+                    <label for="confirmar">Confirmar Contraseña</label>
+                    <br>
+                    <input type="password" id="confirmar" name="confirmar">
+                    <br>
+
+                    <label for="nivel">Nivel de Conocimiento</label>
+                    <br>
+                    <input type="number" id="nivel" name="nivel"
+                        min="10" max="100" value="50" step="5">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p>Seleccione su modalidad de estudio:</p>
+
+                    <input type="radio" id="sincrono" name="modalidad"
+                        value="en_vivo">
+                    <label for="sincrono">Clases en vivo</label>
+
+                    <input type="radio" id="asincrono" name="modalidad"
+                        value="grabadas">
+                    <label for="asincrono">Clases grabadas</label>
+                </td>
+
+                <td>
+                    <p>Seleccione sus áreas de interés:</p>
+                    <br>
+
+                    <input type="checkbox" id="pythone"
+                        name="habilidades" value="pythone">
+                    <label for="pythone">Python</label>
+                    <br>
+
+                    <input type="checkbox" id="programacion"
+                        name="habilidades" value="programacion">
+                    <label for="programacion">Programación Web</label>
+                    <br>
+
+                    <input type="checkbox" id="c++"
+                        name="habilidades" value="c++">
+                    <label for="diseno">Fundamentos de c++</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="curso">Curso de Interés</label>
+                    <br>
+
+                    <select id="curso" name="curso">
+                        <option value="">Selecciona un Curso</option>
+                        <option value="marketing">Pythone</option>
+                        <option value="programacion">Programación Web</option>
+                        <option value="diseno">C++</option>
+                        
+                    </select>
+                </td>
+
+                <td>
+                    <label for="plataforma">Plataforma de Estudio</label>
+                    <br>
+
+                    <select id="plataforma" name="plataforma" size="2">
+                        <option value="">Selecciona una Plataforma</option>
+                        <option value="computadora">Computadora</option>
+                        <option value="tablet">Tablet</option>
+                        <option value="celular">Celular</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos de Capacitación</legend>
+
+                        <label for="cursos">Cantidad de Cursos</label>
+                        <br>
+                        <input type="number" id="cursos" name="cursos"
+                            min="0">
+                        <br>
+
+                        <label for="horas">Horas de Estudio Semanales</label>
+                        <br>
+                        <input type="number" id="horas" name="horas"
+                            min="0">
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+        <button type="submit">Registrarse</button>
+        <button type="reset">Limpiar Formulario</button>
+
+    </form>
+
+</body>
+
+</html>
