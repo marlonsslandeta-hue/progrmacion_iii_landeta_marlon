@@ -1,0 +1,16 @@
+
+.box-model {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 10px solid #2980b9;
+    margin: 30px;
+    background-color: #d6eaf8;
+    color: #1b2631;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
