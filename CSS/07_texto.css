@@ -1,62 +1,73 @@
-h1{
+.texto-KK{
     font-family: Georgia, 'Times New Roman', Times, serif
 }
-
-.texto-jedi {
-    font-family: Arial, Helvetica, sans-serif
+.texto-regular{
+    font-family: Arial, sans-serif;
 }
-
-.texto-imperio {
-    font-family: 'Courier New', Courier, monospace
+.texto-10px{
+    font-size: 10px;
 }
-
-.texto-40px {
-    font-size: 40px;
-}
-.texto-20px {
+.texto-20px{
     font-size: 20px;
 }
-.texto-10px {
-    font-size: 10px;
-
+.texto-40px{
+    font-size: 40px;
 }
 
-.aprendiz {
+.bob{
     font-weight: 300;
 }
-.caballero {
+.pat{
+    font-weight: 400;
+}
+.arenita{
     font-weight: 500;
 }
-.Maestro {
-    font-weight: 800;
-}   
-
-.estilo_letra_normal {
+.estilo_letra_normal{
     font-style: normal;
 }
-.estilo_letra_italica {
+.estilo_letra_italica{
     font-style: italic;
 }
-
-.izquierda {
+.izquierda{
     text-align: left;
 }
-
-.centro {
-    text-align: center;
-}
-.derecha {
+.derecha{
     text-align: right;
 }
-
-.importante {
+.centrada{
+    text-align: center;
+}
+.importante{
     text-decoration: underline;
-}   
-
-.cancelada {
+    text-decoration-color: gold;
+    text-decoration-thickness: 2px;
+    text-decoration-style: solid;
+}
+.cancelada{
     text-decoration: line-through;
 }
-
-.link {
+.link{
     text-decoration: none;
+}
+.titulo-mayuscula{
+    text-transform: uppercase;
+}
+.titulo-minuscula{
+    text-transform: lowercase;
+}
+.titulo-capitalizar{
+    text-transform: capitalize;
+}
+.espaciado-simple{
+    line-height: 1.5;
+}
+.espaciado-doble{
+    line-height: 2; 
+}
+.espacio-letras1{
+    letter-spacing: 1px;
+}
+.espacio-letras2{
+    letter-spacing: 2px;
 }
