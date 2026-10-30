@@ -1,9 +1,10 @@
+
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
 
 body {
     margin: 0;
@@ -14,17 +15,13 @@ body {
 }
 
 
-/* Mobile First */
-
-
-/* Encabezado */
+/* Diseño base: Mobile First */
 
 
 .encabezado {
     padding: 2rem 1rem;
     background-color: #172033;
     text-align: center;
-    border-bottom: 3px solid #FACC15;
 }
 
 
@@ -34,7 +31,7 @@ body {
 }
 
 
-/* Menú móvil */
+/* Menú */
 
 
 .menu {
@@ -51,35 +48,19 @@ body {
 
 .menu a {
     color: #FACC15;
-    font-weight: bold;
     text-decoration: underline;
     text-underline-offset: 4px;
+    font-weight: bold;
 }
 
 
-/* Distribución móvil */
+/* Contenido */
 
 
-.distribucion {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1.5rem;
-
-
-    width: 92%;
-    max-width: 1200px;
+.contenido {
+    width: 90%;
+    max-width: 1100px;
     margin: 2rem auto;
-}
-
-
-/* Contenido principal */
-
-
-.principal {
-    min-width: 0;
-    padding: 1.25rem;
-    background-color: #172033;
-    border-radius: 12px;
 }
 
 
@@ -88,85 +69,49 @@ h2 {
 }
 
 
-/* Misiones: una columna */
+/* Galería móvil: una columna */
 
 
-.misiones {
+.galeria {
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
 }
 
 
-.mision {
-    padding: 1.25rem;
-    background-color: #243247;
-    border: 1px solid #64748B;
-    border-radius: 10px;
-}
+/* Tarjetas */
 
 
-.mision h3 {
-    color: #FACC15;
-}
-
-
-/* Escuadrón */
-
-
-#escuadron {
-    margin-top: 2rem;
-}
-
-
-.escuadron {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 1rem;
-}
-
-
-.piloto {
-    padding: 1.25rem;
-    background-color: #243247;
-    border: 2px solid #22C55E;
-    border-radius: 10px;
-}
-
-
-.piloto h3 {
-    color: #FACC15;
-}
-
-
-/* Panel lateral */
-
-
-.lateral {
+.tarjeta {
     min-width: 0;
+    padding: 1rem;
+    background-color: #172033;
+    border: 2px solid #64748B;
+    border-radius: 12px;
+}
+
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.tarjeta h3 {
+    color: #FACC15;
+    font-size: 1.4rem;
+}
+
+
+#informacion {
+    margin-top: 2rem;
     padding: 1.5rem;
-    background-color: #243247;
-    border-left: 4px solid #FACC15;
+    background-color: #172033;
     border-radius: 10px;
 }
-
-
-.lateral ul {
-    padding-left: 1.5rem;
-}
-
-
-.estado {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #15803D;
-    color: white;
-    border-radius: 6px;
-    font-weight: bold;
-}
-
-
-/* Pie de página */
 
 
 footer {
@@ -176,19 +121,14 @@ footer {
 }
 
 
-footer a {
-    color: #FACC15;
-}
-
-
 /* Tabletas: desde 600px */
 
 
 @media (min-width: 600px) {
 
 
-    .encabezado h1 {
-        font-size: 2.5rem;
+    .galeria {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
 
@@ -199,15 +139,8 @@ footer a {
     }
 
 
-    .misiones {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
-
-    .escuadron {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+    .encabezado h1 {
+        font-size: 2.5rem;
     }
 
 
@@ -220,36 +153,20 @@ footer a {
 @media (min-width: 1000px) {
 
 
+    .galeria {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+
     .encabezado h1 {
         font-size: 3rem;
     }
 
 
-    .distribucion {
-        grid-template-columns:
-            minmax(0, 3fr) minmax(240px, 1fr);
-    }
-
-
-    .principal {
-        padding: 2rem;
-    }
-
-
-    .misiones {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-
-
-    .escuadron {
-        grid-template-columns:
-            repeat(3, minmax(0, 1fr));
+    .tarjeta {
+        padding: 1.5rem;
     }
 
 
 }
-
-
-
 

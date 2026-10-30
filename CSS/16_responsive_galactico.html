@@ -1,29 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-
-
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
 
-    <title>Portal Galáctico Responsive</title>
+    <title>Galería Responsive Star Wars</title>
 
 
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="16_responsive_galactico.css">
 </head>
 <body>
 
 
-    <header class="encabezado" id="inicio">
+    <header class="encabezado">
 
 
-        <h1>Portal Galáctico</h1>
+        <h1>Personajes de Star Wars</h1>
 
 
         <p>
-            Centro de información de Star Wars
+            Explora los héroes y villanos
+            de la galaxia.
         </p>
 
 
@@ -33,162 +33,160 @@
     <nav class="menu">
 
 
-        <a href="#misiones">Misiones</a>
-        <a href="#escuadron">Escuadrón</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#personajes">Personajes</a>
+        <a href="#informacion">Información</a>
 
 
     </nav>
 
 
-    <div class="distribucion">
+    <main class="contenido">
 
 
-        <main class="principal">
+        <section id="personajes">
 
 
-            <section id="misiones">
+            <h2>Galería galáctica</h2>
 
 
-                <h2>Misiones activas</h2>
+            <div class="galeria">
 
 
-                <div class="misiones">
+                <article class="tarjeta">
 
 
-                    <article class="mision">
+                    <img
+                        src="imagenes/luke.jpeg"
+                        alt="Luke Skywalker">
 
 
-                        <h3>Rescate en Coruscant</h3>
+                    <h3>Luke Skywalker</h3>
 
 
-                        <p>
-                            Recuperar información
-                            estratégica de la Rebelión.
-                        </p>
+                    <p>
+                        Caballero Jedi de
+                        la Alianza Rebelde.
+                    </p>
 
 
-                        <p>Responsable: Luke Skywalker</p>
+                </article>
 
 
-                    </article>
+                <article class="tarjeta">
 
 
-                    <article class="mision">
+                    <img
+                        src="imagenes/leia.jpg"
+                        alt="Leia Organa">
 
 
-                        <h3>Defensa de Hoth</h3>
+                    <h3>Leia Organa</h3>
 
 
-                        <p>
-                            Proteger las instalaciones
-                            de la base rebelde.
-                        </p>
+                    <p>
+                        Líder de la
+                        Alianza Rebelde.
+                    </p>
 
 
-                        <p>Responsable: Leia Organa</p>
+                </article>
 
 
-                    </article>
+                <article class="tarjeta">
 
 
-                    <article class="mision">
+                    <img
+                        src="imagenes/yoda.jpg"
+                        alt="Maestro Yoda">
 
 
-                        <h3>Operación Endor</h3>
+                    <h3>Maestro Yoda</h3>
 
 
-                        <p>
-                            Coordinar las fuerzas
-                            de la Alianza Rebelde.
-                        </p>
+                    <p>
+                        Gran Maestro de
+                        la Orden Jedi.
+                    </p>
 
 
-                        <p>Responsable: Han Solo</p>
+                </article>
 
 
-                    </article>
+                <article class="tarjeta">
 
 
-                </div>
+                    <img
+                        src="imagenes/vader.jpg"
+                        alt="Darth Vader">
 
 
-            </section>
+                    <h3>Darth Vader</h3>
 
 
-            <section id="escuadron">
+                    <p>
+                        Lord Sith del
+                        Imperio Galáctico.
+                    </p>
+                </article>
+                <article class="tarjeta">
+                    <img
+                        src="imagenes/han_solo.jpg"
+                        alt="Han Solo">
+                    <h3>Han Solo</h3>
+                    <p>
+                        Piloto del
+                        Halcón Milenario.
+                    </p>
+                </article>
+                <article class="tarjeta">
 
 
-                <h2>Escuadrón Rebelde</h2>
+                    <img
+                        src="imagenes/obi_wan.jpeg"
+                        alt="Obi-Wan Kenobi">
 
 
-                <div class="escuadron">
+                    <h3>Obi-Wan Kenobi</h3>
 
 
-                    <div class="piloto">
-                        <h3>Luke</h3>
-                        <p>Caballero Jedi</p>
-                    </div>
+                    <p>
+                        Maestro Jedi y
+                        mentor de Luke.
+                    </p>
 
 
-                    <div class="piloto">
-                        <h3>Leia</h3>
-                        <p>Comandante</p>
-                    </div>
+                </article>
 
 
-                    <div class="piloto">
-                        <h3>Han Solo</h3>
-                        <p>Piloto</p>
-                    </div>
+            </div>
 
 
-                </div>
+        </section>
 
 
-            </section>
+        <section id="informacion">
 
 
-        </main>
+            <h2>Información</h2>
 
 
-        <aside class="lateral" id="recursos">
-
-
-            <h2>Recursos disponibles</h2>
-
-
-            <ul>
-                <li>Naves X-Wing</li>
-                <li>Naves Y-Wing</li>
-                <li>Halcón Milenario</li>
-                <li>Equipos de comunicación</li>
-            </ul>
-
-
-            <h3>Estado de la base</h3>
-
-
-            <p class="estado">
-                OPERATIVA
+            <p>
+                Esta galería se adapta a
+                teléfonos, tabletas y
+                computadoras mediante CSS3.
             </p>
 
 
-        </aside>
+        </section>
 
 
-    </div>
+    </main>
 
 
     <footer>
 
 
         <p>Portal Galáctico - 2026</p>
-
-
-        <a href="#inicio">
-            Volver arriba
-        </a>
 
 
     </footer>
