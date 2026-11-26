@@ -1,65 +1,98 @@
-let cristales = [30,50,70,40];
-let Posicion = 2;
-let nuevaEnergia = 100;
-for (let i=0; i<cristales.length; i++){
-    console.log("Posicion", i);
-    console.log("Cristal:", cristales[i]);
-    if(Posicion>=0 && Posicion<cristales.length){
-        cristales[Posicion] = nuevaEnergia;
-    } else{
-        console.log("Posicion no válida");
+console.log("Sistema de consultas de dietetica");
+
+let calorias = [120, 200, 150, 90];
+
+for (let i = 0; i < calorias.length; i++) {
+    console.log("Posicion:", i);
+    console.log("Calorias del alimento:", calorias[i]);
+}
+
+console.log("----------------------------------------");
+
+
+let alimentos = [120, 200, 150, 90];
+let posicion = 2;
+let nuevasCalorias = 180;
+
+for (let i = 0; i < alimentos.length; i++) {
+    console.log("Posicion:", i);
+    console.log("Calorias:", alimentos[i]);
+
+    if (posicion >= 0 && posicion < alimentos.length) {
+        alimentos[posicion] = nuevasCalorias;
+    } else {
+        console.log("Posicion no valida");
     }
 }
-console.log(cristales);
+console.log("Nuevas calorias:", alimentos);
 
-let personajes = [
-    { id: 1, nombre: "Rick", energia: 99, edad: 70},
-    { id: 2, nombre: "Morty", energia: 80, edad: 14},
-    { id: 3, nombre: "Marlon", energia: 50, edad: 26},
-]
-for (let personaje of personajes){
-    console.log("ID:", personaje.id);
-    console.log("Nombre:", personaje.nombre);
-    console.log("Energía:", personaje["energia"]);
-    console.log("Edad:", personaje["edad"]);
+console.log("----------------------------------------");
+
+
+let pacientes = [
+    {id: 1, nombre: "Carlos", consultas: 3, edad: 25},
+    {id: 2, nombre: "Maria", consultas: 2, edad: 30},
+    {id: 3, nombre: "Alisson", consultas: 5, edad: 18},
+];
+
+for (let paciente of pacientes) {
+    console.log("ID:", paciente.id);
+    console.log("Nombre:", paciente.nombre);
+    console.log("Consultas realizadas:", paciente["consultas"]);
+    console.log("Edad:", paciente["edad"]);
 }
 
-console.log(".........................................................");
+console.log("----------------------------------------");
 
-console.log("Rick organiza sus misiones:");
-misiones =[
+
+console.log("Registro de alimentos por paciente");
+
+let registros = [
     {
-        piloto: "Rick",
-        cristales: [30,50,60]
+        paciente: "Carlos",
+        calorias: [120, 200, 150]
     },
     {
-        piloto: "Morty",
-        cristales: [20,30,30]
+        paciente: "Maria",
+        calorias: [100, 180, 220]
     },
     {
-        piloto: "Summer",
-        cristales: [90,80,70]
+        paciente: "Alisson",
+        calorias: [90, 150, 130]
     }
 ];
 
-for (let mision of misiones){
-    totalCristales=0;
-    console.log("Piloto: ", mision.piloto);
-    for(let cristal of mision.cristales){
-        console.log("Cristales Recolectados", cristal);
-        totalCristales+=cristales;
+for (let registro of registros) {
+    let totalCalorias = 0;
+
+    console.log("Paciente:", registro.paciente);
+
+    for (let caloria of registro.calorias) {
+        console.log("Calorias del alimento:", caloria);
+        totalCalorias += caloria;
     }
-    console.log("Total de Cristales Recolectados por:", mision.piloto, "son: ", totalCristales);
+
+    console.log("Total de calorias registradas por", registro.paciente, "son:", totalCalorias);
 }
 
-console.log(".......................................................................................................");
+console.log("----------------------------------------------------------------------------------");
 
-let cristalesOriginales = [30,50,70,40];
-let cristalesDobles = cristalesOriginales.map(elemento=>{
+
+let caloriasOriginales = [30, 50, 70, 40];
+
+let caloriasDobles = caloriasOriginales.map(elemento => {
     return elemento * 2;
 });
-console.log(cristalesDobles);
-let validos = cristalesOriginales.filter(cristal=>cristal>=50);
-let resultados = cristalesOriginales.reduce((acumulador,elemeto)=>{
-    return acumulador+elemeto;
+
+console.log("Calorias duplicadas:", caloriasDobles);
+
+
+let validos = caloriasOriginales.filter(caloria => caloria >= 50);
+console.log("Calorias filtradas:", validos);
+
+
+let resultado = caloriasOriginales.reduce((acumulador, elemento) => {
+    return acumulador + elemento;
 });
+
+console.log("Total de calorias:", resultado);
