@@ -1,42 +1,46 @@
-const energia = document.getElementById("energia");
-const dimension = document.getElementById("dimension");
-const portal = document.getElementById("portal");
+const energia = document.getElementById("energia")
+const dimension = document.getElementById("dimension")
+const portal = document.getElementById("portal")
 
-energia.textContent = "Energía: 100%";
-dimension.textContent = "Dimensión: C-137";
-portal.textContent = "Portal: activado";
+energia.textContent="energia:100"
+energia.textContent="dimension:c-137"
+energia.textContent="portal:activado"
 
-// SELECCION ATRAVES DEL NOMBRE DE LA CLASE//
+//seleccion atraves de nombre de clase 
+const personaje = document.querySelector(".personaje");
+personaje.textContent="Rick C-137";
 
-const personajes = document.getElementsByClassName("personaje");
-personajes.textContent = "Rick C-137";
-
-const h2objeto = document.querySelector("h2");
-h2objeto.textContent = "Preparando nave";
+const h2Objeto = document.querySelector("h2");
+h2Objeto.textContent="Preparando nave";
 
 const universo = document.querySelector("#universo");
-universo.textContent = "Preparando universo";
+universo.textContent="Preparando Universo";
 
-const estadomorty= document.querySelector("#morty .estado");
-estadomorty.textContent = "preaparando para viajar";
 
-const planetas = document.querySelectorAll(".planetas");
+const estadoMorty =document.querySelector("#morty .estado");
+estadoMorty.textContent ="preparado para viajar"
+
+const planetas =document.querySelectorAll(".planetas");
 console.log(planetas)
 console.log(planetas.length)
 
-console.log(planetas[0].textContent);
-console.log(planetas[1].textContent);
-console.log(planetas[2].textContent);
-console.log(planetas[3].textContent);
+console.log (planetas[0].textContent);
+console.log (planetas[1].textContent);
+console.log (planetas[2].textContent);
+console.log (planetas[3].textContent);
+console.log (planetas[4].textContent);
+console.log (planetas[5].textContent);
 
-console.log("recorrer a traves de for");
-for (let i = 0; i < planetas.length; i++) {
-    console.log(planetas[i].textContent);
-}
+console.log ("recorrer otra vez de for");
+for (let i=0; i<planetas.length;i++){
+console.log(planetas[i].textContent);}
 
-console.log("Con for of");
-for (let planeta of planetas) {
+console.log ("con forEach");
+planetas.forEach(function(planeta){
     console.log(planeta.textContent);
+});
+
+console.log ("con for of");
+for (let planeta of planetas){
+console.log(planeta.textContent);
 }
-
-
